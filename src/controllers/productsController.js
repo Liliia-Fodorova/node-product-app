@@ -25,7 +25,7 @@ export const updateProduct = async (req, res)=>{
     const product = await Product.findOneAndUpdate({_id: productId},
         req.body,
         {
-            returnDocument:'after',
+            returnDocument: 'after',
         }
     )
 
