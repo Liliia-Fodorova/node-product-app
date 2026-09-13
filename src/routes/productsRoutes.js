@@ -1,6 +1,8 @@
 import { Router } from "express"
-import { getProducts, getProductsById } from "../controllers/productsController.js"
-const route = Router()
-route.get('/products', getProducts)
-route.get('/products/:productId', getProductsById)
-export default route
+import { createProduct, getProducts, getProductsById, updateProduct } from "../controllers/productsController.js"
+const router = Router()
+router.get('/products', getProducts)
+router.get('/products/:productId', getProductsById);
+router.post('/products', createProduct);
+router.patch('/products/:productId', updateProduct);
+export default router
