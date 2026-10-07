@@ -7,3 +7,5 @@ export const registerUserSchema = {
         password: Joi.string().min(8).required(),
     }),
 };
+
+
