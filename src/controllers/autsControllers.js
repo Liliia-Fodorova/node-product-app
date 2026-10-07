@@ -5,6 +5,8 @@ import { createSession, setSessionCookies } from "../services/auth.js";
 import { Session } from "../models/session.js";
 
 
+
+
 export const registerUser = async (req, res) => {
     const { name, email, password } = req.body;
 
