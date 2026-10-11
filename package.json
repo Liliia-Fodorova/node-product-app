@@ -23,6 +23,7 @@
   "dependencies": {
     "bcrypt": "^6.0.0",
     "celebrate": "^16.0.0",
+    "cloudinary": "^2.11.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^17.0.1",
@@ -32,6 +33,7 @@
     "http-errors": "^2.0.0",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^8.16.1",
+    "multer": "^2.4.0",
     "nodemailer": "^10.0.16",
     "path": "^0.12.7",
     "pino-http": "^10.5.0"
