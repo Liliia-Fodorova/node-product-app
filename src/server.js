@@ -8,6 +8,7 @@ import { errorHandler } from './middleware/errorHandler.js';
 import { logger } from './middleware/logger.js';
 import productsRoutes from './routes/productsRoutes.js';
 import authRoutes from './routes/authRoutes.js';
+import userRoutes from './routes/userRoutes.js';
 import { errors } from 'celebrate';
 import cookieParser from 'cookie-parser';
 
@@ -20,6 +21,7 @@ app.use(cors());
 app.use(cookieParser());
 app.use(productsRoutes);
 app.use(authRoutes);
+app.use(userRoutes);
 app.use(notFoundHendller);
 app.use(errors());
 app.use(errorHandler);
